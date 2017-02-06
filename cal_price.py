@@ -20,6 +20,7 @@ def cal_price(BEY,CPR,cpn,ori_term):
 	mod_dur = (sum(PV_yrs)/sum(PV_BEY))/(1+BEY/200.0)
 	print "Price:",sum(PV_BEY)
 
+#default input
 cal_price(7.40184,5,7,30)
 cal_price(8.006,10,7,30)
 cal_price(7.006,10,7,30)
