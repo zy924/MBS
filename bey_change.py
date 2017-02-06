@@ -3,4 +3,5 @@ def bey_change(price,dur,bp):
 	price_minus = price - price*(-dur)*bp/10000
 	return [price_plus,price_minus]
 
+#default input
 print bey_change(98,3.866,50)
