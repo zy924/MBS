@@ -1,8 +1,7 @@
-import pandas
 import numpy as np
 from sympy import *
 
-
+# calculate spot yield from par yield
 def solve_spot(i,year,par,spot):
 	x = symbols('x')
 	temp1 = 0.0
@@ -15,6 +14,7 @@ def solve_spot(i,year,par,spot):
 		if result[ind]>0:
 			return round(result[ind],3)
 
+#calculate forward from par
 def solve_forward(i,year,forward,spot):
 	x = symbols('x')
 	temp1 = 1.0
@@ -41,8 +41,7 @@ def cal(year, par):
 		forward[i] = float(solve_forward(i,year,forward[:i],spot))
 	print "forward",forward
 	
-
-
+#default input data
 year = [.5,1.0,1.5,2.0]
 par = [3.5,3.5,3.5,3.5]
 
