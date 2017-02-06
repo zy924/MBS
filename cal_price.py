@@ -23,5 +23,5 @@ def cal_price(BEY,CPR,cpn,ori_term):
 cal_price(7.40184,5,7,30)
 cal_price(8.006,10,7,30)
 cal_price(7.006,10,7,30)
-cal_price(8.006,15,7,30)
-cal_price(7.006,5,7,30)
+cal_price(8.006,5,7,30)
+cal_price(7.006,15,7,30)
